@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_square"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12dp"
+              android:layout_marginLeft="10dp"
+              android:checked="false"
+              android:id="@+id/check"/>
+          <TextView
+              android:layout_width="0dp"
+              android:layout_weight="0.8"
+              android:layout_height="wrap_content"
+              android:textSize="18dp"
+              android:text="HOME"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="15dp"
+              android:layout_marginBottom="5dp"
+              android:textStyle="bold"
+              android:id="@+id/lname"
+              android:textColor="#000000"
+              />
+          <ImageView
+              android:id="@+id/edit"
+              android:layout_width="0dp"
+              android:layout_weight="0.1"
+              android:layout_height="20dp"
+              android:src="@drawable/ic_change"
+              android:layout_marginTop="15dp"
+              android:backgroundTint="#000000"/>
+          <ImageView
+              android:id="@+id/delete"
+              android:layout_width="0dp"
+              android:layout_weight="0.1"
+              android:layout_height="20dp"
+              android:src="@drawable/ic_trash"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="15dp"/>
+      </LinearLayout>
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="H.no \nLandmark,Street name,Address"
+          android:id="@+id/address"
+          android:textColor="#000000"
+          android:textSize="12dp"
+          android:fontFamily="@font/montserrat"
+          android:layout_marginLeft="50dp"
+          android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show">
+
+    <ImageView
+        android:id="@+id/loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_location"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="View Location"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="60dp"
+            android:textColor="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/defaultadd"
+          android:layout_marginRight="70dp"
+          android:layout_marginLeft="70dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/buttons"
+          android:text="set as default address"
+          android:textColor="#FFFFFF"
+          android:visibility="gone"
+          />
+
+
+  </LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="3dp"
+    android:layout_margin="1dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/iview"
+            android:layout_margin="3dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="Bakery,cakes &amp; Dairy"
+            android:id="@+id/name"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/montserrat"
+
+            />
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

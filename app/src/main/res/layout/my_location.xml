@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/back"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:paddingRight="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dukhana"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Address"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="21dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:background="#f0f0f0"
+        android:transitionName="delivery"/>
+
+   <!-- <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for area, landmark"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#f0f0f0"/>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.FadingCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:SpinKit_Color="#BAB6B6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_square"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/l1"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Default address:"
+                        android:textColor="#fe2f3c"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/montserrat"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:id="@+id/name"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/montserrat"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_pencil"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"/>
+              <!--  <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_trash"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="5dp"/>-->
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sandy Santhosh"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/email"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H.no \n Landmark,Street name,Address"
+                android:id="@+id/address"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    <Button
+        android:id="@+id/myloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Choose Current Location"
+        android:drawableLeft="@drawable/ic_cursor"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:paddingLeft="30dp"
+        android:background="@drawable/buttons"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="-20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textSize="8dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_bold"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="+ Add New Address"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/green_stroke"
+        android:layout_marginTop="10dp"
+        android:id="@+id/add"
+        />
+        <!-- <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Your Location"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="10dp"
+             android:textSize="18dp"
+             android:fontFamily="@font/montserrat_bold"
+             android:id="@+id/tloc"
+             />
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+
+             android:id="@+id/rview"/>-->
+    </LinearLayout>
+</ScrollView>

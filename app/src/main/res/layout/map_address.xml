@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ads"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/back"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:paddingRight="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dukhana"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Address"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="21dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:transitionName="delivery"
+        android:background="#dbdbdb"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Name this Location as "
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/montserrat"/>
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Address/H.no"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/montserrat"/>
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Area"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/montserrat"/>
+        <EditText
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Landmark"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/montserrat"/>
+        <EditText
+            android:id="@+id/landmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Order Receiver's Mobile number"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/montserrat"/>
+                <EditText
+                    android:id="@+id/mob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="40dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Pincode"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/montserrat"/>
+        <Spinner
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:spinnerMode="dropdown"
+            />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:text="Brahmanawada"
+                android:textColor="#707070"
+                android:textSize="16dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginLeft="10dp"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="30dp"
+                android:text="change address"
+                android:textSize="10dp"
+                android:background="#ff515c"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:transitionName="change"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="* Full Address"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="80dp"
+            android:id="@+id/addrss"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="save address"
+            android:textSize="20dp"
+            android:background="#ff515c"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/montserrat_bold"
+            android:id="@+id/save"/>
+
+    </LinearLayout>-->
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="save address"
+        android:textSize="20dp"
+        android:background="#ff515c"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/save"/>
+
+
+
+</RelativeLayout>

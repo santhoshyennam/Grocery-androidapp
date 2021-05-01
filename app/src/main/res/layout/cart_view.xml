@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/image"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.9"
+                        android:layout_height="wrap_content"
+                        android:text="Surf Excel Matic Front Load Liquid:2 Litres"
+                        android:textColor="#000000"
+                        android:id="@+id/name"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/montserrat"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/remove"
+                        android:textSize="10dp"
+                        android:background="@drawable/trash1"
+                        android:textColor="@color/colorPrimary"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14dp"
+                            android:text="save   \u20B9 340.00"
+                            android:id="@+id/discount"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:layout_height="wrap_content"
+                            android:text="quantity"
+                            android:textSize="16dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/quan"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.8"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="\u20B9 390.00"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/mrp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#D51717"
+                                android:text=" \u20B9 500.00"
+                                android:id="@+id/cost"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/ll"
+                            android:layout_width="90dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/buttons">
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.2"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_minus"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="3dp"
+                                android:textColor="#ffffff"
+                                android:id="@+id/minus"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.6"
+                                android:layout_height="match_parent"
+                                android:text="1"
+                                android:background="#FFFFFF"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:textAlignment="center"
+                                android:id="@+id/count"
+                                android:gravity="center_horizontal" />
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.2"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_plus"
+                                android:textColor="#ffffff"
+                                android:layout_marginRight="3dp"
+                                android:layout_marginTop="3dp"
+                                android:id="@+id/plus"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dbdbdb"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

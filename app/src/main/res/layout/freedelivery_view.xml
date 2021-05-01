@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="1. You earn a free reward for 500 or more worth shopping"
+        android:fontFamily="@font/montserrat"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:text="2. The items will be delivered as per the possible timeslots available. (if your preferred timeslot is completed the items will be delivered the next day)"
+        android:fontFamily="@font/montserrat"
+        android:textAlignment="center"
+        />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:text="Next"
+            android:background="@drawable/green_stroke"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat_bold"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

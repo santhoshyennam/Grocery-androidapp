@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7ebe43</color>
+    <color name="colorPrimaryDark">#7ebe43</color>
+    <color name="colorAccent">#7ebe43</color>
+    <color name="tradio">#748a9d</color>
+    <color name="bradio">#f0f4f8</color>
+    <color name="discount">#f25a29</color>
+    <color name="addbutton">#8cc458</color>
+</resources>

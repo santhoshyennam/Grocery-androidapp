@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_browser"/>
+    <item
+        android:id="@+id/menu"
+        android:title="Catogories"
+        android:icon="@drawable/ic_menu"/>
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_surface1"/>
+    <item
+        android:id="@+id/offer"
+        android:title="Offers"
+        android:icon="@drawable/ic_discount"/>
+    <item
+        android:id="@+id/basket"
+        android:title="Basket"
+        android:icon="@drawable/ic_supermarket"/>
+
+</menu>
